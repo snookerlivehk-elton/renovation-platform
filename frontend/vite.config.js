@@ -6,7 +6,7 @@ export default defineConfig({
   preview: {
     host: true,
     port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
-    allowedHosts: ['entt.up.railway.app', '.railway.app']
+    allowedHosts: true // Allow all hosts in Vite 5+
   },
   server: {
     host: true
